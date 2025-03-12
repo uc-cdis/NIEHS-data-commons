@@ -44,7 +44,7 @@
     "tailwindcss": "^3.3.7",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
-    "typescript": "5.0.2"
+    "typescript": "5.7.3"
   },
   "peerDependencies": {
     "@gen3/core": "https://github.com/uc-cdis/gen3-frontend-framework/releases/download/v0.10.0-alpha/gen3-core-0.10.27.tgz",
