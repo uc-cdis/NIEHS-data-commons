@@ -12,7 +12,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/features/**/*.{js,ts,jsx,tsx}',
-    './node_modules/@gen3/frontend/dist/esm/index.js',
+    './node_modules/@gen3/frontend/dist/index/esm/*.js',
   ],
   theme: {
     extend: {
@@ -154,5 +154,33 @@ module.exports = {
         },
       });
     }),
+  ],
+  safelist: [
+    'accent-warm',
+    'text-tiny',
+    'text-xxs',
+    'text-xxxs',
+    'h-20',
+    {
+      pattern:
+        /bg-(primary|secondary|accent|accent-warm|accent-cool|base)-(min|lightest|lighter|light|dark|darker|darkest|max)/,
+    },
+    {
+      pattern:
+        /text-(primary|secondary|accent|accent-warm|accent-cool|base)-(min|lightest|lighter|light|dark|darker|darkest|max)/,
+    },
+    {
+      pattern:
+        /border-(primary|secondary|accent|accent-warm|accent-cool|base)-(min|lightest|lighter|light|dark|darker|darkest|max)/,
+    },
+    {
+      pattern: /bg-(primary|secondary|accent|accent-warm|accent-cool|base)/,
+    },
+    {
+      pattern: /text-(primary|secondary|accent|accent-warm|accent-cool|base)/,
+    },
+    {
+      pattern: /border-(primary|secondary|accent|accent-warm|accent-cool|base)/,
+    },
   ],
 };
